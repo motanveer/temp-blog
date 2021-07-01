@@ -8,6 +8,9 @@
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 5%;
+    width: auto;
+    max-width: 950px;
+    margin: 0 auto;
 
 
 }
@@ -27,8 +30,8 @@
 .logo{
     font-family: Karla;
     font-weight: 700;
-    font-size: 30px;
     color: black;
+    font-size: 30px;
     align-self: center;
     text-decoration: none;
 }

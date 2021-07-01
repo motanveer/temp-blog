@@ -7,6 +7,8 @@
     padding-right: 10%;
     padding-top: 5%;    margin: 0 auto;
     margin-top: 60px;
+    width: auto;
+    max-width: 950px;
 }
 .heroText{
     font-family: Mulish;
@@ -17,6 +19,8 @@
 }
 
 .bio{
+    margin-top: 20px;;
+    margin-bottom: 20px;;
     font-family: Karla;
     text-align: left;
 font-style: normal;

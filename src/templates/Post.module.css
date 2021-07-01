@@ -1,0 +1,40 @@
+h1, h2, h3, h4, h5{
+    font-family: Karla;
+}
+h1{ font-size: min(max(2.5rem, 4vw), 60px);}
+
+p{
+    font-family: Karla;
+    font-weight: 400;
+    font-size: min(max(1rem, 4vw), 20px);
+    color: #2D2D2D;
+}
+
+li{
+    font-family: Karla;
+    color: black;
+    margin-top: 10px;
+    line-height: 150%;
+
+}
+
+.contentContainer{
+ 
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%; 
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: auto;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+img{
+   
+    margin: 0 auto;
+   width: 100%;
+   max-width: 950px;
+}
