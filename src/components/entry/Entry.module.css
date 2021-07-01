@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    border-bottom: 1px solid black;
+    margin: 0 auto;
+    margin-top: 55px;;
+}
+
+.date{
+    font-size: min(max(1rem, 4vw), 22px);
+    color: #B7B7B7;
+    font-family: Karla;
+    font-weight: 400;
+}
+
+.title{
+    font-size: min(max(2rem, 4vw), 45px);
+    color: black;
+    font-family: Karla;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.excerpt{
+    margin-top: 20px;
+    font-size: min(max(.6rem, 4vw), 22px);
+    color: #2D2D2D;
+    font-family: Karla;
+    font-weight: 400;
+}
