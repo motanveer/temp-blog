@@ -5,6 +5,7 @@ import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { Link } from "gatsby"
 import Navbar from "../components/navbar/Navbar"
+import Footer from "../components/footer/Footer"
 
 const Post = ({data}) => {
     const result = data.allMdx.nodes[0];
@@ -15,6 +16,9 @@ const Post = ({data}) => {
            <div className={styles.contentContainer}>
            <h1>{result.frontmatter.title}</h1>
            <MDXRenderer>{result.body}</MDXRenderer>
+           </div>
+           <div className={styles.footer}>
+           <Footer/>               
            </div>
        </div>
         
