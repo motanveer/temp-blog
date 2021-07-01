@@ -11,6 +11,16 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options:{
+        fonts: [
+          'karla\:500,700',
+          'mulish\:400,700,800'
+        ],
+        display:'swap',
+      },
+      },
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",

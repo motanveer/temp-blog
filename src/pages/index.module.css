@@ -1,0 +1,30 @@
+.contentContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;    margin: 0 auto;
+    margin-top: 60px;
+}
+.heroText{
+    font-family: Mulish;
+    font-weight: 800;
+    font-size: 4em;
+    margin-bottom: 20px;
+ 
+}
+
+.bio{
+    font-family: Karla;
+    text-align: left;
+font-style: normal;
+font-weight:400;
+font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));line-height: 138.4%;
+/* or 19px */
+background: #F9F9F9;
+border-radius: 2px;color:
+ #000000;
+padding: 40px;;
+}

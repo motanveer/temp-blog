@@ -1,0 +1,34 @@
+.navContainer{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    height: 100px;
+    margin-top: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+
+
+}
+
+.navButton{
+    text-align: center;
+    align-self: center;
+    color: white;
+    width: 55px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Karla;
+    background: #000000;
+    border-radius: 3px;
+}
+.logo{
+    font-family: Karla;
+    font-weight: 700;
+    font-size: 30px;
+    color: black;
+    align-self: center;
+    text-decoration: none;
+}
