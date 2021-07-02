@@ -1,54 +1,84 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
 
-## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+<div align="center">
+<h1> 🚀 Mo's Temporary Blog Site</h1>
+<p>
+I'm working on launching my personal website. The goal is it to function as portfolio, blog, project showcase, and all around central point of display for any of my technical and creative projects.
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+While that website is still in development, this project will serve as a minimal blog implementation.
+<p>
+</div>
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
 
-2.  **Start developing.**
+## 🎃 Built using Gatsby + MDX
+--- 
+ This site is built using Gatsby v3.
 
-    Navigate into your new site’s directory and start it up.
+Blog content is written via MDX and transformed using gatsby-plugin-mdx.
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+The implementation is very minimal. 
 
-3.  **Open the code and start customizing!**
+## Here's how it works:
+---
 
-    Your site is now running at http://localhost:8000!
+### Example MDX File
+We start off with our blog post, an MDX file.
+```
+---
+//Frontmatter:
+Title: Top 10 Supergirl Comics
+Slug: supergirl-comic
+Date: 07-01-2021
+---
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+# Content starts here
+....
+```
+This MDX File (+ any other MDX file) can be queried via GraphQL.
 
-4.  **Learn more**
+### Example Query
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+```
+const result = await graphql(`
+      query {
+        allMdx {
+          nodes {
+            frontmatter{
+              slug
+            }
+          }
+        }
+      }    
+    `)
+```
+This will return all MDX files, and their associated slug.
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+### Creating Pages from the MDX Files
+Once we have the slug information we can use Gatsby's Node API to programatically generate pages from our MDX files.
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+```
+result.data.allMdx.nodes.forEach(node => {
+        console.log(node.slug)
+        createPage({
+          path: "blog/" +node.frontmatter.slug,
+          component: path.resolve(`./src/templates/Post.js`),
+          context:{
+            slug:  "blog/" +node.frontmatter.slug
+          }, 
+        })
+      })
+```
+This will go through each node, get it's slug, and then create a path that resembles ```blog/slug-name```
 
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+```component: path.resolve(`./src/templates/Post.js`), ```  is the React component that serves as our blog post layout.
 
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+We send it a context variable, in this case the slug of the blog post.
+```
+ontext:{
+            slug:  "blog/" +node.frontmatter.slug
+          }
+```
 
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+### Inside Our Layout Component 
 
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+// TO DO FINISH READ-ME
