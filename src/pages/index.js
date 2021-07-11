@@ -2,6 +2,7 @@ import * as React from "react"
 import Navbar from '../components/navbar/Navbar'
 import Footer from '../components/footer/Footer'
 import * as styles from './index.module.css'
+import { StaticImage } from "gatsby-plugin-image"
 
 // markup
 const IndexPage = () => {
@@ -9,9 +10,15 @@ const IndexPage = () => {
     <div>
       <Navbar/>
       <div className={styles.contentContainer}>
-        <h1 className={styles.heroText}>Hey.</h1>
+      <StaticImage className={styles.heroImage}
+      src="../images/Mo_Tanveer-min.png"
+      alt="Mo Tanveer"
+      placeholder="tracedSVG"
+      layout="constrained"
+    />
+        <h1 className={styles.heroText}>Hi. I’m Mo Tanveer— a marketer, designer, & front-end developer.</h1>
         <div className={styles.bio}>
-        I’m Mo—a growth marketer, designer, and front-end developer. I like skateboarding, acting, and making videos.
+        I’m a 2000s Disney Channel aficionado. Aspiring film maker and actor. I also love skateboarding, collection action figures, and building cool things.
         </div>
         <Footer/>
       </div>
