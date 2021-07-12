@@ -3,11 +3,13 @@ import Navbar from '../components/navbar/Navbar'
 import Footer from '../components/footer/Footer'
 import * as styles from './index.module.css'
 import { StaticImage } from "gatsby-plugin-image"
+import SEO from "../components/seo"
 
 // markup
 const IndexPage = () => {
   return (
     <div>
+      <SEO title="Mo Tanveer"/>
       <Navbar/>
       <div className={styles.contentContainer}>
       <StaticImage className={styles.heroImage}
