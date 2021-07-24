@@ -18,7 +18,7 @@ const IndexPage = () => {
       placeholder="tracedSVG"
       layout="constrained"
     />
-        <h1 className={styles.heroText}>Hi. I’m Mo Tanveer— a marketer, designer, & front-end developer.</h1>
+        <h1 className={styles.heroText}>Hi. I’m Mo Tanveer— a marketer, designer, and front-end developer.</h1>
         <div className={styles.bio}>
         I’m a 2000s Disney Channel aficionado. Aspiring film maker and actor. I also love skateboarding, collection action figures, and building cool things.
         </div>
