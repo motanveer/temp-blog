@@ -5,7 +5,7 @@
     border-bottom: 1px solid black;
     margin: 0 auto;
     margin-top: 55px;;
-    width: 80%;
+    width: 100%;
 }
 
 .date{
@@ -18,15 +18,15 @@
 .title{
     font-size: min(max(2rem, 4vw), 45px);
     color: black;
-    font-family: Karla;
-    font-weight: 400;
+    font-family: Mulish;
+    font-weight: 700;
     margin-top: 10px;
 }
 
 .excerpt{
     margin-top: 20px;
     font-size: min(max(.6rem, 4vw), 22px);
-    color: #2D2D2D;
+    color: #4E4E4E;
     font-family: Karla;
     font-weight: 400;
 }

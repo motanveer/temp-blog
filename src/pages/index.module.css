@@ -13,8 +13,8 @@
 .heroText{
     font-family: Mulish;
     font-weight: 800;
-    font-size: min(max(1.1rem, 4vw), 42px);
-    margin-top: 10px;
+    font-size: min(max(1.1rem, 4vw), 30px);
+    margin-top: 20px;
     width: 100%;
     text-align: center;
  
@@ -23,7 +23,7 @@
 .heroImage{
     height: auto;
     width: auto;
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -40,3 +40,18 @@ border-radius: 2px;color:
  #000000;
 padding: 40px;;
 }
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+    .heroImage{
+        width: 400px;
+    }
+}
+
+@media only screen  and (max-width : 1220px) {
+    .heroImage{
+        width: 300px;
+    }
+}
+    
+    
