@@ -8,7 +8,7 @@
     margin: 0 auto;
     margin-top: 30px;
     width: auto;
-    max-width: 950px;
+    max-width: 1150px;
 }
 .heroText{
     font-family: Mulish;
@@ -16,41 +16,60 @@
     font-size: min(max(1.1rem, 4vw), 30px);
     margin-top: 20px;
     width: 100%;
-    text-align: center;
+    text-align: left;
+    align-self: center;
  
 }
 
 .heroImage{
     height: auto;
     width: auto;
-    max-width: 600px;
+    justify-content: center;
+    align-self: center;
+    max-width: 1200px;
     margin: 0 auto;
+}
+
+.heroSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 600px;
 }
 
 .bio{
     margin-top: 20px;;
     margin-bottom: 20px;;
     font-family: Karla;
-    text-align: left;
+    text-align: center;
 font-style: normal;
 font-weight:400;
-font-size: min(max(.8rem, 2vw), 23px);/* or 19px */
+font-size: min(max(.8rem, 2vw), 19px);/* or 19px */
 background: #F9F9F9;
 border-radius: 2px;color:
  #000000;
 padding: 40px;;
+max-width: 1150px;
 }
 
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1224px) {
     .heroImage{
-        width: 400px;
+        width: 1500px;
     }
 }
 
 @media only screen  and (max-width : 1220px) {
+    .heroSection{
+        flex-direction: column;
+        height: auto;
+    }
+    .heroText{
+        text-align: center;
+    }
     .heroImage{
-        width: 300px;
+        max-width: 600px;
+        margin: 0 auto;
     }
 }
     
