@@ -5,10 +5,11 @@ const Footer = () => {
     return (
         <div className={styles.footerContainer}>
             <ul className={styles.list}>
-                <a href="https://twitter.com/mohtanveer"><li>Twitter</li></a>
-                <a href="mailto:mo@motanveer.com"><li>E-mail</li></a>
-                <a href="https://instagram.com/mohtanveer"><li>Insta</li></a>
-                <a href="https://www.tiktok.com/@realmotanveer"><li>TikTok</li></a>
+                <a href="https://twitter.com/mohtanveer"><li>TWITTER</li></a>
+                <a href="mailto:mo@motanveer.com"><li>E-MAIL</li></a>
+                <a href="https://instagram.com/mohtanveer"><li>INSTAGRAM</li></a>
+                <a href="https://www.instagram.com/brakefastproductions"><li>BRAKE/FAST PRODUCTIONS</li></a>
+
             </ul>
         </div>
     )
