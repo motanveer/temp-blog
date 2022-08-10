@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     siteUrl: "https://www.motanveer.com",
     title: "Mo Tanveer",
-    description: "Mo Tanveer is a growth marketer, designer, and front-end developer.",
+    description: "Mo Tanveer is an actor, filmmaker, growth marketer, and all around digital creator.",
     author: "Mo Tanveer",
   },
   plugins: [

@@ -13,7 +13,8 @@ const IndexPage = () => {
       <SEO title="Mo Tanveer" />
       <div className={styles.contentContainer}>
         <div className={styles.heroSection}>
-        
+        <h1 className={styles.heroText}>Mo Tanveer is an Actor, Filmmaker, and Growth Marketer.</h1>
+
           <StaticImage className={styles.heroImage}
             src="../images/Mo-Tanveer.jpg"
             alt="Mo Tanveer"
@@ -21,19 +22,15 @@ const IndexPage = () => {
             layout="constrained"
           />
 
-<h1 className={styles.heroText}>Hi. I’m Mo Tanveer— Actor, Digital Creator, and Growth Marketer.</h1>
           
         </div>
 
         <div className={styles.bio}>
-          <br/>I’m a 2000s Disney Channel aficionado that loves skateboarding and thrift shopping.
-Ask me about startups, marketing, design, sales, web development, filmmaking, and VFX.
+          <br/>Hi, I'm Mo a a professional actor, filmmaker, growth marketer, and all-around digital creator. Ask me about startups, VFX, film production, sales, marketing, and web development.
           
         </div>
 
         <div className={styles.imageGrid}>
-        <StaticImage className={styles.heroImage} src="../images/nt1.jpg" alt="Mo Tanveer" placeholder="tracedSVG" layout="fullWidth"/>
-
 
         </div>
 
